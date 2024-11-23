@@ -22,11 +22,11 @@ const Time = () => {
             newhr(gothr)
         }
         let timer=setInterval(() => {
-            console.log({cursec})           
             getsec()
+            console.log({cursec})           
         },1000);
         return () => clearInterval(timer)
-    },[cursec])
+    },[cursec]) 
    
 
   return (

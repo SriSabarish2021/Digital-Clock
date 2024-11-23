@@ -12,6 +12,8 @@ const Day = () => {
       const getcalen=()=>{
           let calender=new Date()
           const day=calender.getDay()
+          console.log(day);
+          
           const DayNames = [
             "Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday",
             "Saturday"];
@@ -37,7 +39,7 @@ const Day = () => {
           getcalen()
       },1000);
       return () => clearInterval(timer)
-  },[])
+  },[curday])
  
 
   return (
